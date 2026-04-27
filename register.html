@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - SATS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                <img src="../assets/images/logo.svg" alt="SATS Logo" style="height: 40px; margin-right: 10px;">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="register.html" class="active">Register</a>
+                <a href="checkin.html">Check-in</a>
+                <a href="history.html">History</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="auth-container">
+            <div class="card">
+                <div class="auth-header">
+                    <h2>Student Registration</h2>
+                    <p>Create your account to start tracking attendance.</p>
+                </div>
+
+                <div id="registerSuccess" class="success-message"></div>
+                <div id="registerError" class="form-error" style="margin-bottom: 1rem; text-align: center;"></div>
+
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="nourhan">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentId" class="form-label">Student ID</label>
+                        <input type="text" id="studentId" class="form-control" placeholder="2023001">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">University Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="student@nmu.edu.eg">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-control" placeholder="••••••••">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" id="confirmPassword" class="form-control" placeholder="••••••••">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SATS - Faculty of Computer Engineering & Science | New Mansoura University</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+
+</html>

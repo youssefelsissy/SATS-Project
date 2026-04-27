@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar - SATS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                <img src="../assets/images/logo.svg" alt="SATS Logo" style="height: 40px; margin-right: 10px;">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+                <a href="checkin.html">Check-in</a>
+                <a href="history.html">History</a>
+                <a href="calendar.html" class="active">Calendar</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="card">
+            <h2 style="margin-bottom: 2rem;">Attendance Calendar</h2>
+
+            <div class="calendar-controls">
+                <button id="prevMonth" class="btn btn-outline">&larr; Previous</button>
+
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <h3 id="monthYearLabel" style="margin: 0;">Month</h3>
+                    <select id="yearSelect" class="form-control" style="width: auto; padding: 0.25rem 0.5rem;">
+                    </select>
+                </div>
+
+                <button id="nextMonth" class="btn btn-outline">Next &rarr;</button>
+            </div>
+
+            <div id="calendarGrid" class="calendar-grid">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SATS - Faculty of Computer Engineering & Science | New Mansoura University</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/calendar.js"></script>
+</body>
+
+</html>

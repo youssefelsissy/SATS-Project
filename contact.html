@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SATS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                <img src="../assets/images/logo.svg" alt="SATS Logo" style="height: 40px; margin-right: 10px;">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+                <a href="checkin.html">Check-in</a>
+                <a href="history.html">History</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="card" style="max-width: 800px; margin: 0 auto;">
+            <h2 style="text-align: center; margin-bottom: 1rem;">Contact Support</h2>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+                Have questions or issues with the SATS system? Reach out to us!
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div>
+                    <h3 style="margin-bottom: 1rem;">Get in Touch</h3>
+                    <ul style="line-height: 2; color: var(--text-secondary);">
+                        <li><strong>📍 Office:</strong> Faculty of Computer Engineering & Science, New Mansoura
+                            University</li>
+                        <li><strong>📧 Email:</strong> support@nmu.edu.eg</li>
+                        <li><strong>📞 Phone:</strong> +20 123 456 7890</li>
+                        <li><strong>⏰ Hours:</strong> Sun-Thu, 9:00 AM - 4:00 PM</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Name</label>
+                            <input type="text" id="contactName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail" class="form-label">Email</label>
+                            <input type="email" id="contactEmail" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea id="contactMessage" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SATS - Faculty of Computer Engineering & Science | New Mansoura University</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+
+</html>
